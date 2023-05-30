@@ -1,6 +1,9 @@
+import { useState } from "react";
 import myLogo from "../images/production.png";
 
 function Navbar() {
+  // Create state for searching youtube API
+  const [searchBooks, setSearchBooks] = useState([]);
   // Api handling part
   const handleFormSubmit = async (event) => {
     event.preventDefault();
