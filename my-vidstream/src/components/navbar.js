@@ -1,15 +1,31 @@
 import myLogo from "../images/production.png";
 
 function Navbar() {
+  // Api handling part
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
-      <div className="bg-blue-500 p-4">
-        <a href="www.google.com">
-          <img src={myLogo} alt="Logo" />
-        </a>
-      </div>
       <div className="navbar-container">
-        <nav></nav>
+        <div className="flex items-center space-x-4">
+          <a href="www.google.com">
+            <img class="logo-scope wd-10" src={myLogo} alt="Logo" />
+          </a>
+          <nav>
+            <form action="/search" method="get">
+              <input
+                type="text"
+                id="header-search"
+                placeholder="Search.."
+                name="s"
+              />
+              <button type="submit">Search</button>
+            </form>
+          </nav>
+        </div>
+        <div />
       </div>
     </>
   );

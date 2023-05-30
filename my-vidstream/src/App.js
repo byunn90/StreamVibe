@@ -5,7 +5,6 @@ import Navbar from "../src/components/navbar";
 function App() {
   return (
     <>
-      <p>Hi</p>;
       <Navbar />;
     </>
   );
