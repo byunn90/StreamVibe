@@ -1,5 +1,7 @@
 import { useState } from "react";
 import myLogo from "../images/production.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   // Create state for searching youtube API
@@ -11,36 +13,30 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar-container flex flex-row">
-        <div className="flex items-center space-x">
+      <nav>
+        <div className="flex justify-center items-center">
           <a href="www.google.com">
             <img className="logo-scope w-12" src={myLogo} alt="Logo" />
           </a>
-          <nav>
-            <form
-              className="flex items-center gap-4"
-              action="/search"
-              method="get"
-            >
-              <input
-                type="text"
-                id="header-search"
-                placeholder="Search.."
-                name="s"
-                className="outline-none rounded-md border-2 border-blue-600"
-              />
-              <button
-                className="rounded-md border-2 border-blue-500 rounded-full wd-12 shadow hover:shadow-lg
-               "
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
-          </nav>
+          <form
+            className="typeo-search flex items-center justify-center gap-2"
+            action="/search"
+            method="get"
+          >
+            <input
+              type="text"
+              id="header-search"
+              placeholder="Search.."
+              name="s"
+              className="outline-none rounded-md border-2 border-blue-600"
+            />
+            <button className="flex items-center justify-center focus:outline-none focus:ring rounded-md border-2 rounded-full wd-10 shadow hover:bg-gray-400 hover:text-white">
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
+          </form>
         </div>
-        <div />
-      </div>
+      </nav>
+      <div />
     </>
   );
 }
