@@ -11,13 +11,13 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar-container">
-        <div className="flex items-center space-x-4">
+      <div className="navbar-container flex flex-row">
+        <div className="flex items-center space-x">
           <a href="www.google.com">
-            <img class="logo-scope wd-10" src={myLogo} alt="Logo" />
+            <img className="logo-scope w-12" src={myLogo} alt="Logo" />
           </a>
           <nav>
-            <form action="/search" method="get">
+            <form className="flex items-center" action="/search" method="get">
               <input
                 type="text"
                 id="header-search"
