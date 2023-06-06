@@ -5,10 +5,18 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   // Create state for searching youtube API
-  const [searchBooks, setSearchBooks] = useState([]);
+  const [showTooltip, setShowTooltip] = useState(false);
   // Api handling part
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+  };
+
+  const handleMouseEnter = () => {
+    setShowTooltip(true);
+  };
+
+  const handleMouseLeave = () => {
+    showTooltip(false);
   };
 
   return (
@@ -16,9 +24,9 @@ function Navbar() {
       <nav>
         <div className="flex items-center">
           <div>
-            <a className="type-scope-2 gap-2" href="www.google.com">
+            <a className="type-scope-2" href="www.google.com">
               <img
-                className="logo-scope w-12 flex-shrink-0"
+                className="logo-scope w-10 flex-shrink-0"
                 src={myLogo}
                 alt="Logo"
               />
@@ -26,7 +34,7 @@ function Navbar() {
           </div>
           <div className="flex justify-center flex-grow">
             <form
-              className="typeo-search m-1 flex items-center gap-2"
+              className="typeo-search m-1 flex items-center"
               action="/search"
               method="get"
             >
@@ -35,9 +43,12 @@ function Navbar() {
                 id="header-search"
                 placeholder="Search.."
                 name="s"
-                className="outline-none rounded-md border-2 border-blue-600"
+                className="outline-none h-5 border px-2 rounded-l-lg rounded-r-none bg-white-200 text-gray-800"
               />
-              <button className="flex items-center justify-center focus:outline-none focus:ring rounded-md border-2 rounded-full wd-10 shadow hover:bg-gray-400 hover:text-white">
+              <button
+                dir="rtl"
+                className="bg-gray-200 text-gray-800 h-5 border-4 rounded-l-none rounded-r-lg flex items-center justify-center focus:outline-none focus:ring border-2 shadow "
+              >
                 <FontAwesomeIcon icon={faSearch} />
               </button>
             </form>
