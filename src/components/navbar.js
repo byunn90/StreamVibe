@@ -4,19 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
-  // Create state for searching youtube API
-  const [showTooltip, setShowTooltip] = useState(false);
-  // Api handling part
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-  };
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleMouseEnter = () => {
-    setShowTooltip(true);
+    setShowPopup(true);
   };
 
   const handleMouseLeave = () => {
-    showTooltip(false);
+    setShowPopup(false);
   };
 
   return (
@@ -50,17 +45,23 @@ function Navbar() {
                 className="bg-gray-200 text-gray-800 h-5 border-4 rounded-l-none rounded-r-lg flex items-center justify-center focus:outline-none focus:ring border-2 shadow"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-              ></button>
+              >
+                <FontAwesomeIcon icon={faSearch} />
+              </button>
             </form>
           </div>
         </div>
       </nav>
-      {showTooltip && (
-        <div className="popup">
-          <span className="popup-text">Search</span>
+      {showPopup && (
+        <div className="popup flex justify-center">
+          <span
+            className="italic bg-gray-200 text-xs px-2 py-1 max-w-xs rounded-lg border-1 popup-text"
+            style={{ fontSize: "10px", marginLeft: "250px" }}
+          >
+            Search
+          </span>
         </div>
       )}
-      <div />
     </>
   );
 }

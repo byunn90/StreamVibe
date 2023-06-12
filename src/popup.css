@@ -1,0 +1,4 @@
+.popup {
+  display: inline-flex;
+  max-width: 200px; /* Adjust the value as per your requirement */
+}
