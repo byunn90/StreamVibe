@@ -47,14 +47,19 @@ function Navbar() {
               />
               <button
                 dir="rtl"
-                className="bg-gray-200 text-gray-800 h-5 border-4 rounded-l-none rounded-r-lg flex items-center justify-center focus:outline-none focus:ring border-2 shadow "
-              >
-                <FontAwesomeIcon icon={faSearch} />
-              </button>
+                className="bg-gray-200 text-gray-800 h-5 border-4 rounded-l-none rounded-r-lg flex items-center justify-center focus:outline-none focus:ring border-2 shadow"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              ></button>
             </form>
           </div>
         </div>
       </nav>
+      {showTooltip && (
+        <div className="popup">
+          <span className="popup-text">Search</span>
+        </div>
+      )}
       <div />
     </>
   );
