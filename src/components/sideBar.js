@@ -1,18 +1,13 @@
-import Home from "./home";
-import Libary from "../pages/Libary";
-import Subscriptions from "../pages/Subscriptions";
-import WatchLater from "../pages/WatchLater";
+import { Link } from "react-router-dom";
 
-function sideBar() {
+function SideBar() {
   return (
-    <>
-      <div className="side-container">
-        <link to="/Home"></link>
-        <link to="/Libary"></link>
-        <link to="/Subscriptions"></link>
-        <link to="/WatchLater"></link>
-      </div>
-      ;
-    </>
+    <div className="side-container">
+      <Link to="/Library">Library</Link>
+      <Link to="/Subscriptions">Subscriptions</Link>
+      <Link to="/WatchLater">Watch Later</Link>
+    </div>
   );
 }
+
+export default SideBar;

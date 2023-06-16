@@ -7,3 +7,5 @@ function footer() {
     </div>
   );
 }
+
+export default footer;
