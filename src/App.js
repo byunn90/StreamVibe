@@ -1,24 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import Navbar from "./components/Navbar";
-import Library from "./pages/Library";
-import Subscriptions from "./pages/Subscriptions";
-import WatchLater from "./pages/WatchLater";
-import Shorts from "./pages/Shorts";
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <div>
+        <Navbar />
         <SideBar />
-        <Switch>
-          <Route path="/Library" component={Library} />
-          <Route path="/Subscriptions" component={Subscriptions} />
-          <Route path="/WatchLater" component={WatchLater} />
-          <Route path="/Shorts" component={Shorts} />
-        </Switch>
+        {/* Add the rest of your components and routes here */}
       </div>
     </Router>
   );
