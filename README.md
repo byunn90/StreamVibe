@@ -10,13 +10,13 @@ Join us today and immerse yourself in a world of endless entertainment and oppor
 
 ## Technologies
 
--JavaScript
--HTML
--CSS
--TailWind
--React
--MongoDB
--GraphQL
+- JavaScript
+- HTML
+- CSS
+- TailWind
+- React
+- MongoDB
+- GraphQL
 
 ## Contact
 
