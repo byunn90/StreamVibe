@@ -2,8 +2,8 @@
 
 # Table of Contents
 
-1. [Description](##Description)
-2. [Technologies](##Technologies)
+1. [Description](#description)
+2. [Technologies](#technologies)
 
 ## Description
 
@@ -29,4 +29,4 @@ kayhan.mamak@Hotmail.com
 
 ## Development
 
-Website is still undergoing Development
+Website is still undergoing development.
