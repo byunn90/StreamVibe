@@ -16,10 +16,6 @@ Additionally, we provide aspiring streamers and influencers with cutting-edge so
 
 Join us today and immerse yourself in a world of endless entertainment and opportunities. Experience the Stream Vibe difference and let us elevate your streaming and viewing experience like never before.
 
-## Usage
-
-UnderDevelopment
-
 ## Technologies
 
 - JavaScript
@@ -29,6 +25,10 @@ UnderDevelopment
 - React
 - MongoDB
 - GraphQL
+
+## Usage
+
+UnderDevelopment
 
 ## Contact
 
