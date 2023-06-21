@@ -1,5 +1,10 @@
 ## 📺 Stream-Vibe
 
+# Table of Contents
+
+1. [Description](##Description)
+2. [Technologies](##Technologies)
+
 ## Description
 
 Stream Vibe is the ultimate destination for individuals seeking a relaxing and enjoyable experience. We offer a wide range of content including popular influencers, sports events, gaming tournaments, movies, and much more. Whether you're looking to unwind or explore exciting new entertainment, Stream Vibe has got you covered.
