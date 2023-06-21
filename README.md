@@ -32,8 +32,8 @@ UnderDevelopment
 
 ## Contact
 
-📧: kayhan.mamak@Hotmail.com
-linkdin: https://www.linkedin.com/in/kayhan-mamak-5423b4262/
+- 📧: kayhan.mamak@Hotmail.com
+- linkdin: https://www.linkedin.com/in/kayhan-mamak-5423b4262/
 
 ## Development
 
