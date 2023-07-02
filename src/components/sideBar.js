@@ -1,17 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaHome, FaInfoCircle, FaBook, FaFolder } from "react-icons/fa";
 
 function SideBar() {
   return (
-    <div
-      className="text-sm gap-4 p-2 flex flex-col w-1/12 side-container border border-gray-300"
-      style={{ borderRadius: "2px" }}
-    >
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/subscriptions">Subscriptions</Link>
-      <Link to="/library">Library</Link>
-    </div>
+    <aside>
+      <div
+        className="linkConainer text-sm gap-4 p-2 flex flex-col w-1/12 side-container border border-gray-300"
+        style={{ borderRadius: "2px" }}
+      >
+        <Link to="/home">
+          <FaHome /> Home
+        </Link>
+        <Link to="/about">
+          <FaInfoCircle /> About
+        </Link>
+        <Link to="/subscriptions">
+          <FaBook /> Subscriptions
+        </Link>
+        <Link to="/library">
+          <FaFolder /> Library
+        </Link>
+      </div>
+    </aside>
   );
 }
 
