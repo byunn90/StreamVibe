@@ -10,7 +10,7 @@ function SideBar() {
         style={{ borderRadius: "2px" }}
       >
         <Link to="/home">
-          <FaHome /> Home
+          <FaHome />
         </Link>
         <Link to="/about">
           <FaInfoCircle /> About

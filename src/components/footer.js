@@ -3,6 +3,7 @@ function Footer() {
     <div>
       <ul>
         <li>Hello</li>
+        <li></li>
       </ul>
     </div>
   );

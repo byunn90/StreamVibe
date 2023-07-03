@@ -19,7 +19,7 @@ function Navbar() {
       <nav>
         <div className="flex items-center">
           <div>
-            <a className="type-scope-2" href="www.google.com">
+            <a className="type-scope-2" href="http://localhost:3000/">
               <img
                 className="logo-scope w-10 flex-shrink-0"
                 src={myLogo}

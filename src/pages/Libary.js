@@ -2,7 +2,7 @@ import React from "react";
 
 function Libary() {
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen">
       <p>Welcome to our Libary</p>
     </div>
   );
